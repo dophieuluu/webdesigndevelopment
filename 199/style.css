@@ -1,0 +1,58 @@
+.progress-title{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 7px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #000;
+    margin-bottom: 40px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before,
+.progress .progress-bar:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    outline: 1px solid #000;
+    position: absolute;
+    top: -7px;
+    left: -1px;
+}
+.progress .progress-bar:after{
+    left: auto;
+    right: 0;
+}
+.progress.orange .progress-bar:before,
+.progress.orange .progress-bar:after{
+    border: 4px solid #f26419;
+}
+.progress.yellow .progress-bar:before,
+.progress.yellow .progress-bar:after{
+    border: 4px solid #edb458;
+}
+.progress.blue .progress-bar:before,
+.progress.blue .progress-bar:after{
+    border: 4px solid #0e79b2;
+}
+.progress.green .progress-bar:before,
+.progress.green .progress-bar:after{
+    border: 4px solid #7cb518;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}

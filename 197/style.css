@@ -1,0 +1,62 @@
+.demo{ background: #dad9d4; }
+.progress{
+    height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: none;
+    margin-top: 40px;
+    position: relative;
+}
+.progress .progress-title{
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    border-radius: 100px 0 0 100px;
+    float: left;
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.progress .progress-title:after{
+    content: "";
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: 1;
+}
+.progress .progress-bar{
+    width: 80%;
+    background: #fff;
+    box-shadow: none;
+    position: relative;
+}
+.progress .progress-value{
+    height: 100%;
+    border-radius: 0 100px 100px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #fff;
+    animation: animate-positive 2s;
+}
+.progress.red .progress-value{ background: #ec4251; }
+.progress.green .progress-value{ background: #73cd21; }
+.progress.blue .progress-value{ background: #2e9ce0; }
+.progress.yellow .progress-value{ background: #eea921; }
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+@media only screen and (max-width: 480px){
+    .progress .progress-title{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
