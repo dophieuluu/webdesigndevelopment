@@ -1,0 +1,155 @@
+:root{
+    --white: #fff;
+    --color_1: #28B6F6;
+    --color_2: #E53935;
+    --color_3: #1cbc5c;
+}
+.pricingTable{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.pricingTable .pricingTable-header{
+    color: var(--white);
+    background-color: var(--color_1);
+    padding: 30px 0 20px;
+    margin: 0 0 10px;
+    position: relative;
+}
+.pricingTable .pricingTable-header:before,
+.pricingTable .pricingTable-header:after{
+    content: "";
+    background: linear-gradient(-45deg, transparent 75%, var(--white) 75%) 0 50%,linear-gradient( 45deg, transparent 75%, var(--white) 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+    width: 100%;
+    height: 21px;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+.pricingTable .pricingTable-header:after{
+    background: linear-gradient(-45deg, transparent 75%, var(--color_1) 75%) 0 50%,linear-gradient( 45deg, transparent 75%, var(--color_1) 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+    top: auto;
+    bottom: -21px;
+}
+.pricingTable .title{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+.pricingTable .amount{
+    font-size: 70px;
+    font-style: italic;
+    letter-spacing: -2px;
+    line-height: 60px;
+    display: inline-block;
+}
+.pricingTable .amount-sm{
+    font-size: 22px;
+    line-height: 40px;
+    vertical-align: top;
+    margin-top: -6px;
+    display: inline-block;
+}
+.pricingTable .month{
+    font-size: 15px;
+    display: block;
+}
+.pricingTable .pricing-content{
+    background: #273238;
+    padding: 20px 20px 40px;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+}
+.pricingTable .pricing-content:before{
+    content: "";
+    background: linear-gradient(-45deg, transparent 75%, var(--white) 75%) 0 50%,linear-gradient( 45deg, transparent 75%, var(--white) 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+    width: 100%;
+    height: 21px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pricingTable ul{
+    padding: 0 0 20px 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable ul li{
+    color: var(--white);
+    font-size: 20px;
+    line-height: 45px;
+}
+.pricingTable ul li .far{
+    color: var(--color_1);
+    font-size: 22px;
+    margin-right: 5px;
+}
+.pricingTable ul li.disable{ filter: blur(1px); }
+.pricingTable .pricingTable-signup{
+    color: var(--white);
+    background-color: var(--color_1);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 100px;
+    width: 100px;
+    padding: 25px 10px;
+    margin: -50px auto 0;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup:hover{
+    color: var(--color_1);
+    background-color: var(--white);
+    box-shadow: 0 0 0 5px var(--color_1),0 0 20px var(--color_1);
+}
+.pricingTable.red .pricingTable-header,
+.pricingTable.red .pricingTable-signup{
+    background-color: var(--color_2);
+}
+.pricingTable.red .pricing-content li .far{ color: var(--color_2); }
+.pricingTable.red .pricingTable-header:after{
+    background: linear-gradient(-45deg, transparent 75%, var(--color_2) 75%) 0 50%,linear-gradient( 45deg, transparent 75%, var(--color_2) 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+}
+.pricingTable.red .pricingTable-signup:hover{
+    color: var(--color_2);
+    background-color: var(--white);
+    box-shadow: 0 0 0 5px var(--color_2),0 0 20px var(--color_2);
+}
+.pricingTable.green .pricingTable-header,
+.pricingTable.green .pricingTable-signup{
+    background-color: var(--color_3);
+}
+.pricingTable.green .pricing-content li .far{ color: var(--color_3); }
+.pricingTable.green .pricingTable-header:after{
+    background: linear-gradient(-45deg, transparent 75%, var(--color_3) 75%) 0 50%,linear-gradient( 45deg, transparent 75%, var(--color_3) 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+}
+.pricingTable.green .pricingTable-signup:hover{
+    color: var(--color_3);
+    background-color: var(--white);
+    box-shadow: 0 0 0 5px var(--color_3),0 0 20px var(--color_3);
+}
+@media only screen and (max-width: 1200px){
+    .pricingTable{ margin: 0 0 30px; }
+}
+@media only screen and (max-width: 479px){
+    .pricingTable .pricing-content ul{
+        font-size: 15px;
+    }
+}
