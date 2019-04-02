@@ -1,0 +1,89 @@
+.pricingTable{
+    border: 2px solid #727cb6;
+    margin-top: 20px;
+    text-align: center;
+}
+.pricingTable .pricingTable-header > span {
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 27px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+}
+.pricingTable .pricingTable-header,
+.pricingTable .pricingContent{
+    background-color: #fff;
+}
+.pricingTable .pricingContent ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0 15px;
+}
+.pricingTable .pricingContent ul li {
+    border-bottom: 1px dotted #8493a1;
+    color: #9999a5;
+    padding: 10px;
+    text-align: center;
+}
+.pricingTable .pricingContent ul li:last-child{
+    border-bottom: none;
+}
+.pricingTable .pricingTable-sign-up{
+    color: #fff;
+    padding: 50px 0;
+}
+.pricingTable .price-value{
+    font-size: 50px;
+    font-weight: normal;
+}
+.pricingTable .btn-block{
+    background: #fff;
+    color: #000;
+    border: 0 none;
+    border-radius: 25px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .btn-block:hover{
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+.pricingTable.blue,
+.pricingTable.blue .pricingTable-header > span{
+    background: #727cb6;
+    border-color: #727cb6;
+}
+.pricingTable.pink,
+.pricingTable.pink .pricingTable-header > span{
+    background: #ed687c;
+    border-color: #ed687c;
+}
+.pricingTable.orange,
+.pricingTable.orange .pricingTable-header > span{
+    background: #e67e22;
+    border-color: #e67e22;
+}
+.pricingTable.green,
+.pricingTable.green .pricingTable-header > span{
+    background: #008b8b;
+    border-color: #008b8b;
+}
+@media only screen and (max-width:990px){
+    .pricingTable{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:767px){
+    .pricingTable{
+        margin-bottom: 40px;
+    }
+}
