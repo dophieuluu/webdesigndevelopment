@@ -1,0 +1,106 @@
+.pricingTable{
+    padding: 25px 0;
+    border: 1px solid #fe5f55;
+    text-align: center;
+}
+.pricingTable .price-value{
+    font-size: 60px;
+    font-weight: 800;
+    color: #0d3b66;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #0d3b66;
+    letter-spacing: 2px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.pricingTable .title{
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 0 0 20px 0;
+    background: #eee;
+    font-size: 20px;
+    color: #fe5f55;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .title{
+    background: #f4c724;
+    color: #fff;
+}
+.pricingTable .title:before,
+.pricingTable .title:after{
+    content: "";
+    border-right: 26px solid #eee;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -26px;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .title:after{
+    border-right: none;
+    border-left: 26px solid #eee;
+    left: auto;
+    right: -26px;
+}
+.pricingTable:hover .title:before{ border-right-color: #f4c724; }
+.pricingTable:hover .title:after{ border-left-color: #f4c724; }
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0 0 25px 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    font-size: 17px;
+    color: #0d3b66;
+    line-height: 40px;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 7px 30px;
+    background: #eee;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fe5f55;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .pricingTable-signup{
+    background: #f4c724;
+    color: #fff;
+}
+.pricingTable .pricingTable-signup:before,
+.pricingTable .pricingTable-signup:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable .pricingTable-signup:hover:before{
+    background: rgba(255, 255, 255, 0.7);
+    left: 60%;
+    right: 60%;
+    z-index: 1;
+}
+.pricingTable .pricingTable-signup:hover:after{
+    background: rgba(255, 255, 255, 0.7);
+    top: 60%;
+    bottom: 60%;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
