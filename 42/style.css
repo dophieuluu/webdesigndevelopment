@@ -1,0 +1,176 @@
+.pricingTable{
+    text-align: center;
+    box-shadow: 0 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.pricingTable > .pricingTable-header{
+    color:#fff;
+    padding: 3px 0;
+    background: #727cb6;
+}
+.pricingTable .price-value{
+    background: #353740;
+    display: block;
+    padding: 24px 12px;
+    font-size: 32px;
+    position: relative;
+}
+.pricingTable .price-value:after,
+.pricingTable .price-value:before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top:40%;
+    right:-15px;
+}
+.pricingTable .price-value:before{
+    left:-15px;
+}
+.pricingTable .price-value > span{
+    font-size: 24px;
+}
+.pricingTable .price-value > .month{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.pricingTable .price-value > .month:before{
+    content: "";
+    border: 1px solid #fff;
+    width: 28px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.pricingTable .icon{
+    display: block;
+    padding: 30px 0;
+    font-size: 54px;
+}
+.pricingTable .icon > i{
+    transform: rotateY(0deg);
+    transition: all 1s ease-out 0s;
+}
+.pricingTable .icon:hover > i{
+    transform: rotateY(360deg);
+    color:#333333;
+    transition: all 1s ease-out 0s;
+}
+.pricingTable .heading{
+    padding: 12px 0;
+    background: #353740;
+    display: block;
+}
+.pricingTable .heading > h3{
+    margin: 0;
+    text-transform: capitalize;
+}
+.pricingTable > .pricingContent{
+    text-align: left;
+}
+.pricingTable > .pricingContent > ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.pricingTable > .pricingContent > ul > li{
+    padding: 12px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    transition: all 0.3s ease-out 0s;
+}
+.pricingTable > .pricingContent > ul > li:before{
+    content: "\f105";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    transition:all 0.5s ease 0s;
+}
+.pricingTable > .pricingContent > ul > li:hover{
+    background: #f8f8f8;
+    color:#727cb6;
+}
+.pricingTable > .pricingContent > ul > li:hover:before{
+    margin-right: 15px;
+}
+.pricingTable .pricingTable-sign-up{
+    padding: 15px 0;
+    background: #fff;
+}
+.pricingTable-sign-up > .btn-block{
+    width: 50%;
+    margin: 0 auto;
+    background: #727cb6;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: 0px;
+    position: relative;
+    transition: all 0.5s ease-out 0s;
+}
+.pricingTable-sign-up > .btn-block:after,
+.pricingTable-sign-up > .btn-block:before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    top:30%;
+    right: -10px;
+    transition:all 0.8s ease 0s;
+}
+.pricingTable-sign-up > .btn-block:before{
+    left:-10px;
+}
+.pricingTable .btn-block:hover:after,
+.pricingTable .btn-block:hover:before{
+    width: 0;
+    height: 0;
+}
+.pricingTable.pink .pricingTable-header,
+.pricingTable.pink .btn-block{
+    background: #ed687c;
+}
+.pricingTable.pink .pricingContent > ul > li:hover{
+    color: #ed687c;
+}
+.pricingTable.orange .pricingTable-header,
+.pricingTable.orange .btn-block{
+    background: #e67e22;
+}
+.pricingTable.orange .price-value > .month:after{
+    content: "best";
+    width: 42px;
+    height:42px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    top:3px;
+    right: 3px;
+    color:#000;
+    font-size: 12px;
+    line-height: 42px;
+    font-weight: bold;
+}
+.pricingTable.orange .pricingContent > ul > li:hover{
+    color: #e67e22;
+}
+.pricingTable.dark-green .pricingTable-header,
+.pricingTable.dark-green .btn-block{
+    background: #008b8b;
+}
+.pricingTable.dark-green .pricingContent > ul > li:hover{
+    color: #008b8b;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{
+        margin-bottom: 20px;
+    }
+}
