@@ -1,0 +1,92 @@
+.demo{ background: #f7f7f7; }
+.pricingTable{
+    background: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover{
+    box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.21);
+}
+.pricingTable .pricingTable-header{
+    padding: 20px 0 100px;
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.pricingTable .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+.pricingTable .price-value{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background: #91825c;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+.pricingTable .value{
+    color: #fff;
+    transform: rotate(-45deg);
+    position: relative;
+}
+.pricingTable .amount{
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    left: -35px;
+}
+.pricingTable .month{
+    font-size: 12px;
+    color: #bcbbbb;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    left: -17px;
+}
+.pricingTable .pricing-content{
+    list-style: none;
+    padding: 0;
+    margin: 100px 0 30px;
+    font-size: 16px;
+    color: #000;
+}
+.pricingTable .pricing-content li{
+    line-height: 40px;
+    position: relative;
+}
+.pricingTable .pricing-content li:before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    font-size: 20px;
+    color: #72c759;
+    margin-right: 10px;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background: #91825c;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable .pricingTable-signup i{
+    font-size: 15px;
+    margin-right: 8px;
+}
+.pricingTable .pricingTable-signup:hover{
+    background: #ed695f;
+}
+@media only screen and (max-width:990px){
+    .pricingTable{ margin-bottom: 20px; }
+}
