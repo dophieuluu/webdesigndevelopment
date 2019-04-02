@@ -1,0 +1,126 @@
+.pricingTable{
+    text-align: center;
+    background: #fff;
+    border: 1px solid #dce2ed;
+}
+.pricingTable > .pricingTable-header{
+    color:#fff;
+}
+.pricingTable-header > .heading{
+    display: block;
+    padding: 12px 0;
+    background: #727cb6;
+    box-shadow: 0 5px 0 #5f6795;
+    border-radius: 0 0 10px 10px;
+    width:60%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+}
+.heading > h3{
+    text-transform: uppercase;
+    margin: 0;
+}
+.pricingTable-header > .price-value{
+    display: block;
+    color:#3A424A;
+    padding: 25px 0;
+    font-size: 50px;
+}
+.price-value > .mo{
+    font-size: 15px;
+}
+.price-value > .currency{
+    position: relative;
+    bottom: 20px;
+    font-size: 28px;
+    margin-right: 4px;
+}
+.pricingTable > .pricingContent{
+    text-transform: capitalize;
+}
+.pricingTable > .pricingContent > ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.pricingTable > .pricingContent > ul > li{
+    padding: 15px 0;
+    border-top: 1px solid #dce2ed;
+    color:#818d9a;
+}
+.pricingTable > .pricingContent > ul > li:nth-child(odd){
+    background: #F8F8F8;
+}
+.pricingTable-sign-up{
+    padding: 40px 0;
+    border-top: 1px solid #dce2ed;
+}
+.pricingTable-sign-up > .btn-block{
+    border-color: #727cb6;
+    color: #727cb6;
+    width: 50%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: all 0.2s ease-in-out 0s;
+}
+.pricingTable-sign-up > .btn-block:hover{
+    background: #727cb6;
+    color:#fff;
+}
+.pink .heading{
+    background: #ed687c;
+    box-shadow: 0 5px 0 #bb5163;
+}
+.pink .btn-block{
+    border-color:#ed687c;
+    color:#ed687c;
+}
+.pink .btn-block:hover{
+    background: #ed687c;
+    color:#fff;
+}
+.green .heading{
+    background: #1abc9c;
+    box-shadow: 0 5px 0 #25917d;
+    position: relative;
+}
+.green .heading:after{
+    content: "HOT";
+    width: 50px;
+    height:50px;
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    top:55%;
+    right: -10px;
+    border-radius: 50%;
+    border:4px solid #fff;
+    line-height: 45px;
+}
+.green .btn-block{
+    border-color:#1abc9c;
+    color:#1abc9c;
+}
+.green .btn-block:hover{
+    background: #1abc9c;
+    color:#fff;
+}
+.yellow .heading{
+    background: #f2ca27;
+    box-shadow: 0 5px 0 #f4a62a;
+}
+.yellow .btn-block{
+    border-color:#f2ca27;
+    color:#f2ca27;
+}
+.yellow .btn-block:hover{
+    background: #f2ca27;
+    color:#fff;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{
+        margin-bottom: 40px;
+    }
+}
