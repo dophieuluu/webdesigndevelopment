@@ -1,0 +1,17 @@
+.progress{
+    border-radius: 0;
+    height:35px;
+    line-height: 35px;
+    box-shadow: none;
+}
+.progress .progress-bar{
+    background-color:#ae1010;
+}
+.progress-bar .sr-only{
+    color: #060606;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    right: -56%;
+    top: 9px;
+}
