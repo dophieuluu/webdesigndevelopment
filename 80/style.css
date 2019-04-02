@@ -1,0 +1,99 @@
+.pricingTable{
+    border: 2px solid #f7959f;
+    padding: 40px 0;
+    text-align: center;
+}
+.pricingTable .title{
+    font-size: 18px;
+    color: #727cb6;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+}
+.pricingTable .amount{
+    display: block;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 5px 0 20px 0;
+}
+.pricingTable .icon{
+    margin-bottom: 30px;
+    position: relative;
+}
+.pricingTable .icon:before,
+.pricingTable .icon:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #dadada;
+    position: absolute;
+    top: 50%;
+}
+.pricingTable .icon:before{
+    left: 0;
+}
+.pricingTable .icon:after{
+    right: 0;
+}
+.pricingTable .icon i{
+    font-size: 25px;
+    color: #333;
+    line-height: 40px;
+    position: relative;
+}
+.pricingTable .pricing-content{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+.pricingTable .pricing-content li{
+    font-size: 14px;
+    color: #333;
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 10px 37px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    border: 2px solid #ccc;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+}
+.pricingTable .pricingTable-signup:hover{
+    border-color: #b3b3b3;
+}
+.pricingTable.middle{
+    border-color: #727cb6;
+    background: #727cb6;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+.pricingTable.middle .title,
+.pricingTable.middle .amount,
+.pricingTable.middle .month,
+.pricingTable.middle .icon i,
+.pricingTable.middle .pricing-content li{
+    color: #fff;
+}
+.pricingTable.middle .pricingTable-signup{
+    background: #f7959f;
+    border-color: #f7959f;
+    color: #fff;
+}
+.pricingTable.middle .pricingTable-signup:hover{
+    background: #e67c86;
+    border-color: #e67c86;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
