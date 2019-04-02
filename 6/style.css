@@ -1,0 +1,53 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    border-bottom: 1px solid #d8973c;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: -5px;
+}
+#accordion .panel:last-child{ border-bottom: none; }
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 20px 15px 30px;
+    background: #273e47;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d8c99b;
+    border: none;
+    transition: all 1s ease 0s;
+}
+#accordion .panel-body{
+    padding: 25px 20px 15px 40px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    background: #d8973c;
+    border: none;
+    position: relative;
+}
+#accordion .panel-body:before{
+    content: "";
+    border-top: 15px solid #273e47;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+#accordion .panel-body:after{
+    content: "";
+    width: 8px;
+    height: 60px;
+    background: #273e47;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
