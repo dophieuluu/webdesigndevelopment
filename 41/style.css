@@ -1,0 +1,88 @@
+.pricingTable{
+    text-align: center;
+    background: #121212;
+}
+.pricingTable > .pricingTable-header{
+    color:#fff;
+    background: #727cb6;
+}
+.pricingTable .heading{
+    display: block;
+    padding-top: 20px;
+}
+.pricingTable .heading:after{
+    content: "";
+    width: 80%;
+    border-bottom: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+}
+.pricingTable .heading > span{
+    margin-bottom: 15px;
+    display: block;
+}
+.pricingTable .heading > h3{
+    margin: 0;
+    text-transform: capitalize;
+}
+.pricingTable .price-value{
+    font-size: 28px;
+    padding-bottom: 20px;
+    display: block;
+}
+.pricingTable .price-value:before{
+    content: "";
+    width: 80%;
+    border-top: 1px solid #B3A6B2;
+    display: block;
+    margin: 0 auto;
+}
+.pricingTable .price-value > .month{
+    font-size: 14px;
+}
+.pricingTable > .pricingContent{
+    text-transform: capitalize;
+    color:#fff;
+    text-align: left;
+}
+.pricingTable > .pricingContent > ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.pricingTable > .pricingContent > ul > li{
+    border-bottom:1px solid #D4D3D4;
+    padding: 15px;
+    text-align: center;
+}
+.pricingTable-sign-up{
+    padding: 20px 0;
+}
+.pricingTable-sign-up > .btn-block{
+    width: 40%;
+    margin: 0 auto;
+    background: #727cb6;
+    color:#fff;
+    border: 0px none;
+    text-transform: capitalize;
+}
+.pricingTable-sign-up > .btn-block:hover{
+    opacity: 0.8;
+}
+.pricingTable.pink .pricingTable-header,
+.pricingTable.pink .btn-block{
+    background: #ed687c;
+}
+.pricingTable.blue .pricingTable-header,
+.pricingTable.blue .btn-block{
+    background: #3498db;
+}
+.pricingTable.green .pricingTable-header,
+.pricingTable.green .btn-block{
+    background: #1abc9c;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{
+        margin-bottom: 20px;
+    }
+}
