@@ -1,0 +1,25 @@
+.progress{
+    height:2px;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 35px;
+    background:#d6d6d6;
+}
+.progressbar-title{
+    color:#333;
+    font-size:15px;
+    margin:5px 0 5px;
+}
+.progressbar-value{
+    float: right;
+    display:block;
+}
+.progress .progress-bar{
+    animation: progress 6s;
+}
+@-webkit-keyframes progress{
+    0% { width: 0%;}
+}
+@keyframes progress{
+    0% { width:0%; }
+}

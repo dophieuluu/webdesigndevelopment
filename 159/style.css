@@ -1,0 +1,35 @@
+.progress_bar{
+    margin-bottom: 20px;
+    position: relative;
+}
+.progress_bar .pro-bar{
+    background:#d3d3d3;
+    display: block;
+    width: 100%;
+    height:25px;
+}
+.progress_bar .pro-bg {
+    height:25px;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-weight: bold;
+    animation: animate-positive 2s;
+}
+.progress_bar .pro-value{
+    color: hsl(0, 0%, 98%);
+    padding: 0 15px;
+    text-align: center;
+    float: left;
+}
+.progress_bar .progress_bar_title{
+    color: hsl(0, 0%, 98%);
+}
+@-webkit-keyframes animate-positive {
+    0% { width: 0%;}
+}
+@keyframes animate-positive {
+    0% { width:0%; }
+}

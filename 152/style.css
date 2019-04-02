@@ -1,0 +1,35 @@
+.progress_bar .progressbar-title{
+    padding: 0 0 3px;
+    margin: 0;
+    color:#7e828a;
+}
+.progress_bar .progress-bar-inner{
+    overflow:visible;
+    position: relative;
+    background-color: hsl(240, 3%, 93%);
+    border: 1px solid hsl(240, 3%, 93%);
+    border-radius: 5px;
+    box-shadow: none;
+    height: 3px;
+    margin-bottom: 25px;
+    padding: 2px 0 5px 3px;
+}
+.progress_bar .progress-bar{
+    line-height: 20px;
+    position: absolute;
+    top:0;
+    z-index: 10;
+}
+.progress_bar .progress-bar > span{
+    color: hsl(225, 3%, 49%);
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -27px;
+    z-index: 9999;
+}
