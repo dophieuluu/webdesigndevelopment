@@ -1,0 +1,93 @@
+.pricingTable{
+    text-align: center;
+    margin-top: 20px;
+}
+.pricingTable .pricingTable-header{
+    background: #383838;
+    position: relative;
+    color: #fff;
+    margin: 0 -8px 0 -8px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 25px 10px 10px;
+}
+.pricingTable .pricingTable-header:before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border: 4px solid transparent;
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+}
+.pricingTable .pricingTable-header:after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    border: 4px solid transparent;
+    border-right: 4px solid #000;
+    border-top: 4px solid #000;
+}
+.pricingTable .heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.pricingTable .pricing-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 43%;
+    font-size: 30px;
+    background: #6e61c4;
+}
+.pricingTable .price-value{
+    padding: 10px;
+    background: #6e61c4;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+.pricingTable .amount{
+    font-size: 80px;
+    position: relative;
+}
+.pricingTable .currency{
+    font-size: 25px;
+    position: absolute;
+    top: 7px;
+    left: -18px;
+}
+.pricingTable .month{
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: 90%;
+}
+.pricingTable .pricing-content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content ul li{
+    font-size: 15px;
+    font-weight: bold;
+    color: #787878;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #d7d7d7;
+}
+.pricingTable .pricing-content ul li:last-child{
+    border-bottom: none;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 25px; }
+}
+@media screen and (max-width: 767px){
+    .pricingTable{ margin-bottom: 40px; }
+}
