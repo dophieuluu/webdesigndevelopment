@@ -1,0 +1,84 @@
+.demo{ background: #e6e6e8; }
+.pricingTable{
+    padding: 28% 0 0;
+    margin: 35px 0;
+    border: 2px solid #fff;
+    text-align: center;
+    background: #17ad90;
+    position: relative;
+}
+.pricingTable .pricingTable-header{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pricingTable .pricingTable-header path{ transition: all 0.3s ease 0s; }
+.pricingTable:hover .pricingTable-header path{ fill: #0b5647; }
+.pricingTable .price-value{
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 5px dotted rgba(255,255,255,0.5);
+    color: #fff;
+    position: relative;
+}
+.pricingTable .amount{
+    font-size: 70px;
+    font-weight: 600;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0 0 60px 0;
+    list-style: none;
+    position: relative;
+}
+.pricingTable .pricing-content li{
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+    text-shadow: 0 0 5px #000;
+}
+.pricingTable .pricingTable-signup{
+    display: block;
+    position: absolute;
+    bottom: -13%;
+    left: 0;
+    right: 0;
+}
+.pricingTable .pricingTable-signup path{
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover path{ fill: #0b5647; }
+.pricingTable.blue{ background: #3598db; }
+.pricingTable.blue:hover .pricingTable-header path,
+.pricingTable.blue .pricingTable-signup a:hover path{ fill: #1a4b6d; }
+.pricingTable.red{ background: #e84c3d; }
+.pricingTable.red:hover .pricingTable-header path,
+.pricingTable.red .pricingTable-signup a:hover path{fill: #73261e;}
+@media only screen and (max-width: 1200px){
+    .pricingTable{ padding: 25% 0 0; }
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 80px; }
+}
+@media only screen and (max-width: 767px){
+    .pricingTable{
+        padding: 35% 0 0;
+        margin-bottom: 100px;
+    }
+    .pricingTable .pricingTable-signup{ bottom: -11%; }
+}
+@media only screen and (max-width: 479px){
+    .pricingTable{ padding: 30% 0 0; }
+}
