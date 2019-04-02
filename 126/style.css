@@ -1,0 +1,132 @@
+.demo{ background-color: #e7e7e7; }
+.pricingTable{
+    color: #fff;
+    background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 35px 35px 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover{ box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+.pricingTable:before,
+.pricingTable:after{
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 75px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    z-index: -1;
+}
+.pricingTable:after{
+    background: linear-gradient(-140deg,#353DAA,#C0B3DE);
+    height: calc(100% - 65px);
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    top: 20px;
+    z-index: -2;
+}
+.pricingTable .title{
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+.pricingTable .price-value{
+    width: 130px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+.pricingTable .currency{
+    font-size: 35px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+.pricingTable .amount{
+    background: linear-gradient(-140deg,#353DAA,#C0B3DE);
+    font-size: 55px;
+    font-weight: 700;
+    height: 130px;
+    line-height: 100px;
+    width: 130px;
+    border-radius: 50%;
+    border: 13px solid #fff;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.pricingTable:hover .amount{ text-shadow: 0 0 15px #000; }
+.pricingTable .pricing-content{
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 15px 0 25px;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.1);
+}
+.pricingTable .pricing-content li:nth-child(even){
+    background-color: transparent;
+}
+.pricingTable .pricingTable-signup{
+    color: #4F53B4;
+    background-color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #4F53B4;
+    display: inline-block;
+    transition:all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup:hover{
+    color: #fff;
+    background-color: #4F53B4;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #000;
+}
+.pricingTable.blue:after,
+.pricingTable.blue .price-value .amount{
+    background: linear-gradient(-140deg,#017ED2,#00D0B1);
+}
+.pricingTable.blue .price-value .month{ color: #017ED2;  }
+.pricingTable.blue .pricingTable-signup{
+    color: #0198C7;
+    box-shadow: 0 0 10px #0198C7;
+}
+.pricingTable.blue .pricingTable-signup:hover{
+    color: #fff;
+    background-color: #0198C7;
+}
+.pricingTable.pink:after,
+.pricingTable.pink .price-value .amount{
+    background: linear-gradient(-140deg,#EA3898,#FF867D);
+}
+.pricingTable.pink .price-value .month{ color: #EA3898;  }
+.pricingTable.pink .pricingTable-signup{
+    color: #F04F90;
+    box-shadow: 0 0 10px #F04F90;
+}
+.pricingTable.pink .pricingTable-signup:hover{
+    color: #fff;
+    background-color: #F04F90;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin: 0 0 30px; }
+}
+@media only screen and (max-width: 479px){
+    .pricingTable .pricing-content{
+        font-size: 15px;
+    }
+}
