@@ -1,0 +1,66 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 30px 5px;
+    position: relative;
+}
+#accordion .panel:before,
+#accordion .panel:after{
+    content: "";
+    border-left: 25px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#accordion .panel:after{
+    border-left: none;
+    border-right: 25px solid #fff;
+    left: auto;
+    right: 0;
+}
+#accordion .panel-heading{
+    padding: 0;
+    position: relative;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 60px 15px 40px;
+    background: #137a91;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f106";
+    top: 12px;
+}
+#accordion .panel-body{
+    padding: 10px 30px 0;
+    border-top: none;
+    font-size: 15px;
+    color: #5c4f4f;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
