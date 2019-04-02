@@ -1,0 +1,94 @@
+.pricingTable{
+    margin-top: 50px;
+    text-align: center;
+}
+.pricingTable .pricingTable-header{
+    background: #2b3b55 ;
+    color: #fff;
+    padding: 25px;
+    position: relative;
+}
+.pricingTable .pricing-icon{
+    font-size: 25px;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background: #2b3b55 ;
+    padding: 10px 15px;
+    border-radius: 4px 4px 0 0;
+}
+.pricingTable .heading{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+}
+.pricingTable .price-value{
+    font-size: 60px;
+    position: relative;
+    display: inline;
+}
+.pricingTable .currency{
+    font-size: 20px;
+    position: absolute;
+    top: 7px;
+    left: -18px;
+}
+.pricingTable .month{
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    right: -35px;
+}
+.pricingTable .value{
+    font-size: 18px;
+    position: absolute;
+    top: 6px;
+    right: -12px;
+}
+.pricingTable .pricing-content{
+    border: 1px solid #d6d2d2;
+    padding-bottom: 40px;
+}
+.pricingTable .pricing-content ul{
+    padding: 0;
+    margin: 25px 0;
+    list-style: none;
+}
+.pricingTable .pricing-content ul li{
+    font-size: 14px;
+    color: #6a7483;
+    background: #fff;
+    line-height: 50px;
+}
+.pricingTable .pricing-content ul li:nth-child(even){
+    background: #f0f0f0;
+}
+.pricingTable .pricingTable-signup a{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background: #b04569;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover{
+    background: #222935;
+    text-decoration: none;
+}
+.pricingTable.purple .pricingTable-header,
+.pricingTable.purple .pricing-icon{
+    background: #b04569;
+}
+.pricingTable.last{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 25px; }
+}
+@media screen and (max-width: 767px){
+    .pricingTable{ margin-bottom: 75px; }
+}
