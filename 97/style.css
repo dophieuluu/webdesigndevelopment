@@ -1,0 +1,94 @@
+.pricingTable{
+    padding: 30px 0;
+    border: 1px solid #043565;
+    text-align: center;
+    color: #043565;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover{
+    background: #25ced1;
+    border-color: #fff;
+    color: #fff;
+}
+.pricingTable:before{
+    content: "";
+    border-top: 45px solid #043565;
+    border-bottom: 45px solid transparent;
+    border-right: 45px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover:before{ border-top-color: #fff; }
+.pricingTable:after{
+    content: "";
+    border-bottom: 45px solid #043565;
+    border-top: 45px solid transparent;
+    border-left: 45px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover:after{ border-bottom-color: #fff; }
+.pricingTable .title{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.pricingTable .price-value{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 25px;
+    line-height: 10px;
+    text-transform: capitalize;
+}
+.pricingTable .pricing-content{
+    padding: 20px 0 0;
+    margin: 0 40px 20px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 40px;
+    border-top: 1px solid #043565;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover .pricing-content{ border-top-color: #fff; }
+.pricingTable .pricing-content:before{
+    content: "\f1b3";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 70px;
+    background: #fff;
+    font-size: 30px;
+    margin: 0 auto;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover .pricing-content:before{ background: #25ced1; }
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 7px 30px;
+    border-radius: 10px;
+    border: 1px solid #043565;
+    font-size: 18px;
+    font-weight: 600;
+    color: #043565;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover .pricingTable-signup{
+    color: #fff;
+    border-color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
