@@ -1,0 +1,87 @@
+.pricingTable{
+    text-align: center;
+    box-shadow: 8px 8px 5px #888;
+    position: relative;
+}
+.pricingTable:after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    position: absolute;
+    bottom: -3px;
+    right: 2px;
+    font-size: 22px;
+    z-index: -1;
+    transition: all 0.7s ease 0s;
+}
+.pricingTable:hover:after{
+    z-index: 1;
+}
+.pricingTable .pricingTable-header{
+    padding: 30px 0;
+    border-radius: 4px 4px 0 0;
+}
+.pricingTable .price-value{
+    display: block;
+    font-size: 85px;
+    color: #fff;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: #fff;
+}
+.pricingTable .btn{
+    padding: 20px 0;
+    font-size: 22px;
+    color: #333;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .btn{
+    border-radius: 0 0 68px 0;
+}
+.pricingTable.orange .pricingTable-header{
+    background: linear-gradient(to bottom,#fd9252,#ff764e);
+}
+.pricingTable.orange .btn{
+    background: linear-gradient(to bottom,#ff764e,#fff);
+}
+.pricingTable.orange:hover:after{
+    color: #ff764e;
+}
+.pricingTable.blue .pricingTable-header{
+    background: linear-gradient(to bottom,#82cfdd,#4ca1af);
+}
+.pricingTable.blue .btn{
+    background: linear-gradient(to bottom,#4ca1af,#fff);
+}
+.pricingTable.blue:hover:after{
+    color: #4ca1af;
+}
+.pricingTable.green .pricingTable-header{
+    background: linear-gradient(to bottom,#95943f,#757519);
+}
+.pricingTable.green .btn{
+    background: linear-gradient(to bottom,#757519,#fff);
+}
+.pricingTable.green:hover:after{
+    color: #757519;
+}
+.pricingTable.pink .pricingTable-header{
+    background: linear-gradient(to bottom,#ef7aa1,#dd5e89);
+}
+.pricingTable.pink .btn{
+    background: linear-gradient(to bottom,#dd5e89,#fff);
+}
+.pricingTable.pink:hover:after{
+    color: #dd5e89;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 20px; }
+}
