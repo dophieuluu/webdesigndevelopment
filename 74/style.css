@@ -1,0 +1,93 @@
+.pricingTable{
+    border: 2px solid #4a4450;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 0 35px;
+    position: relative;
+}
+.pricingTable .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #4a4450;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+.pricingTable .title:before,
+.pricingTable .title:after{
+    content: "";
+    display: block;
+    width: 23%;
+    height: 2px;
+    background: #4a4450;
+    position: absolute;
+    top: 40px;
+}
+.pricingTable .title:before{
+    left: 0;
+}
+.pricingTable .title:after{
+    right: 0;
+}
+.pricingTable .month{
+    font-size: 40px;
+    color: #4a4450;
+    margin-bottom: 20px;
+}
+.pricingTable .month span{
+    display: block;
+    font-size: 15px;
+    color: #4a4450;
+}
+.pricingTable .price-value{
+    background: #727cb6;
+    margin: 0 -2px 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.pricingTable .amount{
+    display: inline-block;
+    font-size: 50px;
+    position: relative;
+}
+.pricingTable .currency{
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: -22px;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    font-size: 15px;
+    color: #4a4450;
+    line-height: 30px;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    width: 125px;
+    padding: 7px 10px;
+    background: #727cb6;
+    border: 1px solid #727cb6;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease 0s;
+}
+.pricingTable:hover .pricingTable-signup{
+    text-decoration: none;
+    background: #fff;
+    color: #727cb6;
+}
+@media only screen and (max-width:990px){
+    .pricingTable{ margin-bottom: 35px; }
+}
