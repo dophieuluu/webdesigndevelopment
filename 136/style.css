@@ -1,0 +1,89 @@
+.demo{ background-color: #e7e7e7; }
+.pricingTable{
+    background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+}
+.pricingTable:hover{ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset; }
+.pricingTable .pricingTable-header{
+    background: linear-gradient(45deg,#EC397B,#AC1187);
+    padding: 20px;
+    margin: 0 0 10px;
+    position: relative;
+}
+.pricingTable .title{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.pricingTable .price-label{
+    color: #fff;
+    background: linear-gradient(45deg,#EC397B,#AC1187);
+    font-size: 22px;
+    width: 100px;
+    margin-bottom: 15px;
+    display: block;
+    -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+.pricingTable .price-value{
+    color: #5F5F5F;
+    margin: 0 0 10px;
+}
+.pricingTable .amount{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.pricingTable .month{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    color: #888;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 45px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.pricingTable .pricing-content li:first-child{ border-top: 1px solid rgba(0,0,0,0.1); }
+.pricingTable .pricing-content li:last-child{ border-bottom: none; }
+.pricingTable .pricingTable-signup{
+    color: #fff;
+    background: linear-gradient(45deg,#EC397B,#AC1187);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup:hover{
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 2px;
+}
+.pricingTable.green .pricingTable-header,
+.pricingTable.green .price-label,
+.pricingTable.green .pricingTable-signup{
+    background: linear-gradient(45deg,#05D67B,#019FE0);
+}
+.pricingTable.orange .pricingTable-header,
+.pricingTable.orange .price-label,
+.pricingTable.orange .pricingTable-signup{
+    background: linear-gradient(45deg,#F49541,#F03371);
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin: 0 0 30px; }
+}
