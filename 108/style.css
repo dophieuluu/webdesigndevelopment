@@ -1,0 +1,151 @@
+.demo{ background: #ccc; }
+.pricingTable{
+    text-align: center;
+    margin: 0 20px 0;
+    z-index: 1;
+    position: relative;
+}
+.pricingTable .title{
+    width: 80%;
+    padding: 20px 5px;
+    margin: 0 auto;
+    background: #feaa14;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+}
+.pricingTable .title:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fe940d;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    transform: skewY(-5deg);
+}
+.pricingTable .pricing-content{
+    padding: 20px 0 80px 0;
+    border-radius: 0 0 120px 120px;
+    background: linear-gradient(to right,#fff 49%,#f2f2f2 50%);
+}
+.pricingTable .price-value{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #feaa14;
+    padding: 25px;
+    margin: 0 auto;
+    color: #fff;
+    box-shadow: 8px 8px 0 3px #fe940d inset;
+}
+.pricingTable .currency{
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: top;
+    margin-top: 8px;
+}
+.price-value .amount{
+    font-size: 50px;
+    font-weight: 700;
+}
+.price-value .month{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.pricingTable ul{
+    list-style: none;
+    padding: 15px 0 25px;
+    margin: 0;
+}
+.pricingTable ul li{
+    margin: 0 15px 7px;
+    background: #feaa14;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
+    letter-spacing: 1px;
+    line-height: 40px;
+    box-shadow: 4px 4px 0 3px #fe940d inset;
+}
+.pricing-content ul li.disable{
+    background: #cbcbcb;
+    color: #fff;
+    box-shadow: 4px 4px 0 3px rgba(0,0,0,0.1) inset;
+}
+.pricingTable .pricingTable-signup{
+    display: block;
+    padding: 5px 35px;
+    margin: -5px -15px 0;
+    background: #feaa14;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup:hover{
+    color: #feaa14;
+    background: linear-gradient(to right,#fe940d 10%,transparent 50%,#fe940d 99%);
+}
+.pricingTable .pricingTable-signup:before,
+.pricingTable .pricingTable-signup:after{
+    content: "";
+    width: 25px;
+    height: 30px;
+    background: linear-gradient(to bottom right,transparent 49%,#fe940d 50%);
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.pricingTable .pricingTable-signup:after{
+    background: linear-gradient(to bottom left,transparent 49%,#fe940d 50%);
+    left: auto;
+    right: 0;
+}
+.pricingTable.blue .title,
+.pricingTable.blue .price-value,
+.pricingTable.blue .pricing-content ul li,
+.pricingTable.blue .pricingTable-signup{ background: #3eb6e8; }
+.pricingTable.blue .title:after{ background: #2fa1c6; }
+.pricingTable.blue .price-value{ box-shadow: 8px 8px 0 3px #2fa1c6 inset; }
+.pricingTable.blue .pricing-content ul li{ box-shadow: 4px 4px 0 3px #2fa1c6 inset; }
+.pricingTable.blue .pricing-content ul li.disable{
+    background: #cbcbcb;
+    box-shadow: 4px 4px 0 3px rgba(0,0,0,0.1) inset;
+}
+.pricingTable.blue .pricingTable-signup:hover{
+    background: linear-gradient(to right,#2fa1c6 10%,transparent 50%,#2fa1c6 99%);
+    color: #3eb6e8;
+}
+.pricingTable.blue .pricingTable-signup:before{ background: linear-gradient(to bottom right,transparent 49%,#2fa1c6 50%); }
+.pricingTable.blue .pricingTable-signup:after{ background: linear-gradient(to bottom left,transparent 49%,#2fa1c6 50%); }
+.pricingTable.green .title,
+.pricingTable.green .price-value,
+.pricingTable.green .pricing-content ul li,
+.pricingTable.green .pricingTable-signup{ background: #ace541; }
+.pricingTable.green .title:after{ background: #98d025; }
+.pricingTable.green .price-value{ box-shadow: 8px 8px 0 3px #98d025 inset; }
+.pricingTable.green .pricing-content ul li{ box-shadow: 4px 4px 0 3px #98d025 inset; }
+.pricingTable.green .pricing-content ul li.disable{
+    background: #cbcbcb;
+    box-shadow: 4px 4px 0 3px rgba(0,0,0,0.1) inset;
+}
+.pricingTable.green .pricingTable-signup:hover{
+    background: linear-gradient(to right,#98d025 10%,transparent 50%,#98d025 99%);
+    color: #ace541;
+}
+.pricingTable.green .pricingTable-signup:before{ background: linear-gradient(to bottom right,transparent 49%,#98d025 50%); }
+.pricingTable.green .pricingTable-signup:after{ background: linear-gradient(to bottom left,transparent 49%,#98d025 50%); }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
