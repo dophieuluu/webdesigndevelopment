@@ -1,0 +1,41 @@
+.demo{ background: #e5e5e3; }
+.pricingTable{
+    text-align: center;
+    background: #28b6f6;
+    border-radius: 102px 0 102px 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover{ box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+.pricingTable .pricingTable-header{
+    margin: -2px -5px 0;
+    position: relative;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: -25px 0 0 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+}
+.pricingTable .pricing-content li.disable{ color: rgba(255,255,255,0.5); }
+.pricingTable .pricing-content li:last-child{ border-bottom: none; }
+.pricingTable .pricingTable-signup{
+    padding: 25px 0;
+}
+.pricingTable .pricingTable-signup a path,
+.pricingTable .pricingTable-signup a text{ transition: all 0.3s ease 0s; }
+.pricingTable .pricingTable-signup a:hover path{
+    fill: #34454d;
+    stroke: #fff;
+    stroke-dasharray: 5,3;
+}
+.pricingTable .pricingTable-signup a:hover text{ fill: #fff; }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
