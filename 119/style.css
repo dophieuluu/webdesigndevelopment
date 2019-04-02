@@ -1,0 +1,90 @@
+.demo{ background: #E9E8E6; }
+.pricingTable{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.pricingTable .pricingTable-header{
+    color: #E97002;
+    background-color: #fff;
+    text-align: center;
+    padding: 70px 0 40px;
+    margin: 0 10px;
+    display: block;
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+    position: relative;
+    z-index: -1;
+}
+.pricingTable .title{
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.pricingTable .pricing-content{
+    background: linear-gradient(to bottom,#FBEA54,#F39733);
+    border-radius: 20px;
+    padding: 15px 15px 25px;
+    margin-top: -15px;
+    z-index: 2;
+    transition:all 0.3s;
+}
+.pricingTable:hover .pricing-content{ box-shadow: 0 0 10px rgba(0,0,0,0.8); }
+.pricingTable .content{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 60px;
+    margin-bottom: 20px;
+    -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+}
+.pricingTable .content ul{
+    color: #000;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    list-style: disc;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto 5px;
+}
+.pricingTable .content ul li{ margin-bottom: 10px; }
+.pricingTable .content ul li span{ color: #F39733; }
+.pricingTable .price-value{
+    color: #000;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+.pricingTable .amount { color: #F39733; }
+.pricingTable .pricingTable-signup{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup:hover{
+    padding: 10px 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.7) inset;
+}
+.pricingTable.green .pricingTable-header{color: #6CB022;}
+.pricingTable.green .price-value .amount{color: #6CB022;}
+.pricingTable.green .pricing-content ul span{color: #6CB022;}
+.pricingTable.green .pricing-content{background: linear-gradient(to bottom,#B0C333,#46A450);}
+.pricingTable.blue .pricingTable-header{color: #1CA2D8;}
+.pricingTable.blue .price-value .amount{color: #1CA2D8;}
+.pricingTable.blue .pricing-content ul span{color: #1CA2D8;}
+.pricingTable.blue .pricing-content{background: linear-gradient(to bottom,#B2DAC2,#51B9B6);}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 479px){
+    .pricingTable{ margin:0 0 30px; }
+    .pricingTable .content ul{ font-size: 15px; }
+    .pricingTable .price-value{ font-size: 23px; }
+}
