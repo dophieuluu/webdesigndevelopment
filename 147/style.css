@@ -1,0 +1,81 @@
+.progress_bar{
+    margin-bottom: 34px;
+    margin-top: 53px;
+}
+.progress_bar > div{
+    border: 2px solid hsl(0, 0%, 97%);
+    border-radius:3px;
+    padding: 4px;
+    position: relative;
+    width: 100%;
+}
+.progress_bar > div:before{
+    background: #9b59b6;
+    content: "";
+    width:2px;
+    height: 15px;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+}
+.progress_bar > div > span{
+    display: table;
+    height: 3px;
+    position: relative;
+    background: #9b59b6;
+}
+.progress_bar > div > span:before{
+    background: #9b59b6;
+    content: "";
+    width: 2px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: -7px;
+}
+.progress_bar > div > span:after{
+    border-color: transparent #9b59b6 transparent transparent;
+    border-style: solid;
+    border-width: 7.5px 7px 7.5px 0;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+.progress_bar > div > span em{
+    background: #f7f7f7;
+    border-radius: 3px;
+    color:#757575;
+    font-size: 14px;
+    font-weight: bold;
+    padding:2px 6px;
+    position: absolute;
+    right:0;
+    top: -35px;
+}
+.progress_bar.green > div:before,
+.progress_bar.green > div > span,
+.progress_bar.green > div > span:before{
+    background: #1abc9c;
+}
+.progress_bar.green > div > span:after{
+    border-color: transparent #1abc9c transparent transparent;
+}
+.progress_bar.orange > div:before,
+.progress_bar.orange > div span,
+.progress_bar.orange > div > span:before{
+    background: #e67e22;
+}
+.progress_bar.orange > div > span:after{
+    border-color: transparent #e67e22 transparent transparent;
+}
+.progress_bar.pink > div:before,
+.progress_bar.pink > div > span,
+.progress_bar.pink > div > span:before{
+    background: #ed687c;
+}
+.progress_bar.pink > div > span:after{
+    border-color: transparent #ed687c transparent transparent;
+}

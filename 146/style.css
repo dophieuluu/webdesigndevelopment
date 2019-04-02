@@ -1,0 +1,34 @@
+.fadeIn {
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+}
+.progress_bar {
+    margin-bottom: 10px;
+    position: relative;
+}
+.progress_bar_title {
+    color: hsl(0, 0%, 0%);
+    display: inline;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.progress_number {
+    color: #a2a1a4;
+    font-size: 13px;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+}
+.progress_bar_holder {
+    background: #d6d9dc;
+    margin-top: 5px;
+}
+.progress_bar_content {
+    height: 5px;
+    transition: width 1s ease-in-out 0s;
+}

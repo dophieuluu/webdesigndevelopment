@@ -1,0 +1,34 @@
+.progress_bar{
+    margin-bottom: 15px;
+}
+.progress_bar > h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 6px 16px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.progress_bar > h3 > span.percentage{
+    color: hsl(0, 0%, 18%);
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    text-shadow: none;
+}
+.progress_bar span.pro-bar{
+    width: 0;
+    height: 100%;
+    background: hsl(168, 76%, 42%);
+    display: block;
+    position: absolute;
+    top: 0;
+}
+.progress_bar span.orange{
+    background: #e67e22;
+}
+.progress_bar span.pink{
+    background: #ed687c;
+}

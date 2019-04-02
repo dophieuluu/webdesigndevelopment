@@ -1,0 +1,25 @@
+.progress_bar_8 .vc_label{
+    text-transform: capitalize;
+}
+.progress_bar_8 .vc_single_bar{
+    height: 6px;
+    margin: 15px 0;
+}
+.progress_bar_8 .vc_single_bar{
+    background: hsl(0, 0%, 97%) none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+    margin-bottom: 11.6667px;
+    position: relative;
+}
+.progress_bar_8 .vc_single_bar span.vc_bar{
+    background-color: #e98a38;
+    border-radius: 3px;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: width 1s linear 0s;
+    width: 0;
+}

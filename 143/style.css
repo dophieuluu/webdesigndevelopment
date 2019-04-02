@@ -1,0 +1,40 @@
+.progress-7 .myprogress {
+    position: relative;
+    height: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    margin-top: 77px;
+}
+.progress-7 .myprogress .pro-bar {
+    width: 70%;
+    height: 100%;
+    background-color: #49a3df;
+}
+.progress-7 .myprogress:before {
+    position: absolute;
+    content: "70%";
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    top: -51px;
+    left: 59%;
+    border-radius: 5px;
+    color: #fff;
+}
+.progress-7 .myprogress:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    background: rgba(255, 0, 0, 0);
+    top: -14px;
+    left: 62%;
+    border-left: 6px solid rgba(255, 0, 0, 0);
+    border-right: 6px solid rgba(255, 0, 0, 0);
+    border-top: 6px solid #000;
+}
+@media only screen and (max-width: 480px) {
+    .progress-7 .myprogress:after{
+        left: 63%;
+    }
+}

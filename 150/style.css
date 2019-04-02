@@ -1,0 +1,32 @@
+.progress_bar{
+    position: relative;
+}
+.progress_bar .progress_bar_title{
+    color: hsl(210, 2%, 50%);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+.progress_bar .progress_number{
+    color: hsl(188, 61%, 56%);
+    font-size: 24px;
+    line-height: 22px;
+    font-weight:normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.progress_bar .pro-bar {
+    background: hsl(210, 8%, 85%);
+    margin:5px 0 20px 0;
+}
+.progress_bar .progress-bar-inner {
+    height:2px;
+}
+.progress_bar.orange .progress_number{
+    color:#e67e22;
+}
+.progress_bar.pink .progress_number{
+    color:#ed687c;
+}

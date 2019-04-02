@@ -1,0 +1,33 @@
+.progress_bar_13 .progress-bar-description{
+    display: block;
+    line-height: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.progress_bar_13 .progress-bar-description span{
+    float: right;
+}
+.progress_bar_13 .pro-bar{
+    background-color: hsl(196, 16%, 81%);
+    display: block;
+    height: 35px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.progress_bar_13 .pro-bar .progress-bar-outer{
+    background: url("../images/pattern.png") repeat scroll left top;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.progress_bar_13 .pro-bar .progress-bar-inner{
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
