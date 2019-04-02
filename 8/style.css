@@ -1,0 +1,57 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 20px 15px 30px;
+    background: #9a031e;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    position: relative;
+}
+#accordion .panel-body{ padding: 15px 0 15px 60px; }
+#accordion .panel-body p{
+    padding: 15px 20px;
+    margin-bottom: 0;
+    background: #e0af63;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    border: 4px double #000;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    position: relative;
+}
+#accordion .panel-body p:before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 50%;
+    position: absolute;
+    border-left: 5px dotted #9a031e;
+    top: 0;
+    left: -40px;
+}
+#accordion .panel-body p:after{
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #9a031e;
+    position: absolute;
+    bottom: 40%;
+    left: -35px;
+}
