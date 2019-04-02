@@ -1,0 +1,124 @@
+.pricingTable {
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin: 0 -15px;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+}
+.pricingTable .pricingTable-header{
+    padding-bottom: 25px;
+}
+.pricingTable .active{
+    background-color: #f9ce06;
+    color: #fff;
+    position: relative;
+}
+.pricingTable .best{
+    width: 80px;
+    height: 80px;
+    background: #82b440;
+    border-radius: 50%;
+    padding: 25px 20px 20px;
+    font-size: 13px ;
+    text-transform: capitalize;
+    line-height: 13px;
+    position: absolute;
+    right: -20px;
+    top: 25px;
+    z-index: 1;
+}
+.pricingTable .heading{
+    background-color:#fff;
+    border-bottom: 1px solid #d0d0d0;
+    color: #393939;
+    display: block;
+    padding: 15px 10px;
+}
+.pricingTable .heading h3 {
+    font-size: 20px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.pricingTable .price-value {
+    color: #474747;
+    margin: 10px auto 0;
+    padding: 20px 10px 0;
+    display: block;
+    font-size: 25px;
+    line-height: 35px;
+}
+.pricingTable .price-value span{
+    font-size: 60px;
+    font-weight: 100;
+}
+.pricingTable .active .price-value{
+    color: #fff;
+}
+.pricingTable .subtitle{
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.pricingTable .pricingContent ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.pricingContent ul li{
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+    background-color: #fff;
+}
+.pricingContent ul li:nth-child(even) {
+    background-color: #f7fff7;
+}
+.pricingContent ul li:last-child{
+    border-bottom: 1px solid #dbdbdb;
+}
+.pricingTable .pricingTable-sign-up{
+    padding: 25px 0;
+}
+.pricingTable .btn-block{
+    background: #f9ce06;
+    border:0px none;
+    border-radius: 5px;
+    color:#fff;
+    width: 50%;
+    padding: 10px 5px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    position: relative;
+    top:0;
+    transition:all 0.5s ease 0s;
+}
+.pricingTable .btn-block:after{
+    content: "\f090";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.pricingTable .btn-block:hover{
+    top: -5px;
+}
+.pricingTable .btn-block:hover:before{
+    content: "";
+    background:rgba(0, 0, 0, 0) radial-gradient(ellipse at center center , rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    height: 10px;
+    position: absolute;
+    top: 102%;
+    left:5%;
+    width: 90%;
+}
+@media screen and (max-width:990px){
+    .pricingTable{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:767px){
+    .pricingTable{
+        margin: 0 0 30px 0;
+    }
+    .pricingTable .best{
+        right: -12px;
+    }
+}
