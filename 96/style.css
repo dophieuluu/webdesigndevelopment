@@ -1,0 +1,63 @@
+.pricingTable{
+    padding: 30px 0;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.pricingTable:before{
+    content: "";
+    border-right: 70px solid #9d1e33;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    position: absolute;
+    top: 30px;
+    right: -100px;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover:before{ right: 0; }
+.pricingTable .title{
+    font-size: 24px;
+    color: #3a405a;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.pricingTable .price-value{
+    font-size: 40px;
+    font-weight: 700;
+    color: #3a405a;
+    margin-bottom: 10px;
+}
+.pricingTable .month{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #3a405a;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 30px 0 20px 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    font-size: 16px;
+    color: #3a405a;
+    line-height: 55px;
+}
+.pricingTable .pricing-content li:nth-child(even){
+    background: #9d1e33;
+    color: #fff;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 7px 30px;
+    background: #9d1e33;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover .pricingTable-signup{ border-radius: 30px; }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
