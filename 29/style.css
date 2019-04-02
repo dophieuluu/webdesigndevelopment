@@ -1,0 +1,113 @@
+.pricingTable{
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+}
+.pricingTable:hover .price-value{
+    transform: rotate(360deg);
+    transition:0.6s ease;
+}
+.pricingTable > .pricingTable-header{
+    color:#fff;
+}
+.pricingTable-header > .heading{
+    background: #e67e22;
+    display: block;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0 0;
+}
+.heading > h3{
+    font-weight:bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.heading > .subtitle{
+    font-size: 13px;
+    margin-top: 3px;
+    display: block;
+}
+.pricingTable-header > .price-value{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border:2px solid #474747;
+    display: block;
+    margin: 0 auto;
+    color:#474747;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 20px 10px 0 10px;
+    line-height: 35px;
+}
+.price-value > span{
+    font-size: 40px;
+}
+.price-value > .mo{
+    display: inline-block;
+    line-height: 0;
+    padding-top: 13px;
+    border-top: 1px solid #474747;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-top: -20px;
+}
+.pricingTable > .pricingContent{
+    margin: 10px 0 0 0;
+}
+.pricingContent > ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.pricingContent > ul > li{
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+    text-align: center;
+    transition:0.4s ease-in-out;
+}
+.pricingContent > ul > li:before{
+    content: "\f101";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    color:#e67e22;
+    margin-right: 10px;
+}
+.pricingContent > ul > li:hover{
+    padding-left: 15px;
+    transition:0.4s ease-in-out;
+}
+.pricingContent > ul > li:last-child{
+    border-bottom: 1px solid #dbdbdb;
+}
+.pricingTable > .pricingTable-sign-up{
+    padding: 25px 0;
+}
+.btn-block{
+    width: 50%;
+    margin: 0 auto;
+    background: #e67e22;
+    border:0px none;
+    padding: 10px 5px;
+    color:#fff;
+    text-transform: capitalize;
+    transition:0.3s ease;
+    border-radius: 0px;
+}
+.btn-block:after{
+    content: "\f090";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.btn-block:hover{
+    border-radius: 10px;
+    background: #e67e22;
+    color:#fff;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{
+        margin-bottom: 20px;
+    }
+}
