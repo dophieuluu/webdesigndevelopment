@@ -1,0 +1,110 @@
+.pricingTable{
+    padding: 30px 0;
+    margin: 30px 0;
+    background: #f4f4f4;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
+.pricingTable:before,
+.pricingTable:after{
+    content: "";
+    width: 72%;
+    height: 52px;
+    background: #f4f4f4;
+    margin: 0 auto;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    transform: rotate(-3deg) skew(-3deg);
+    transition: all 0.3s ease-out 0s;
+}
+.pricingTable:after{
+    top: auto;
+    bottom: -32px
+}
+.pricingTable:hover,
+.pricingTable:hover:before,
+.pricingTable:hover:after{
+    background: #6bbccb;
+}
+.pricingTable .pricingTable-header{
+    border-bottom: 1px solid #e6e5e5;
+}
+.pricingTable .price-value{
+    padding: 8px 0;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    color: #161616;
+}
+.pricingTable:hover .price-value{
+    color: #fff;
+}
+.pricingTable .month{
+    font-size: 15px;
+    color: #727272;
+    line-height: 24px;
+}
+.pricingTable .title{
+    font-size: 24px;
+    color: #272727;
+    text-transform: uppercase;
+}
+.pricingTable:hover .title{
+    color: #fff;
+}
+.pricingTable .pricing-content{
+    padding: 0 15%;
+    margin: 0 0 30px 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e5e5;
+    font-size: 15px;
+    color: #272727;
+}
+.pricingTable:hover .pricing-content li{
+    color: #fff;
+}
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    padding: 2px 20px;
+    background: #272727;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out 0s;
+}
+.pricingTable .pricingTable-signup:hover{
+    color: #272727;
+}
+.pricingTable .pricingTable-signup:before{
+    content: "";
+    background: #6bbccb;
+    border-radius: 50%;
+    padding: 18%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+    transition: transform .3s cubic-bezier(1, 0.15, 0.34, 1.03);
+}
+.pricingTable-signup:hover:before{
+    transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 50px; }
+}
+@media only screen and (max-width: 767px){
+    .pricingTable{ margin-bottom: 80px; }
+}
