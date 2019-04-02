@@ -1,0 +1,76 @@
+.progressbar-title{
+    color: #333;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.progress{
+    height: 25px;
+    line-height: 35px;
+    overflow: visible;
+    background: #f7f7f7;
+    border-radius: 25px;
+    margin: 20px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.progress .progress-bar{
+    position: relative;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 95%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    background-size: 40px 40px;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar span{
+    display: block;
+    background: #000;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 11px;
+    padding: 12.5px 25px;
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+.progress .progress-bar span i{
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 25px;
+    position: absolute;
+    top: -3px;
+    left: 35px;
+    font-size: 17px;
+}
+.progress .progress-bar span i:after{
+    content: "";
+    width: 64%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 22px;
+    left: 2px;
+}
+.progress .progress-value{
+    position: absolute;
+    top: -45px;
+    right: -20px;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 7px;
+    background: #000;
+    border-radius: 0 0 5px 5px;
+}
+.progress .progress-value:after{
+    content: "";
+    border: 7px solid transparent;
+    border-top: 7px solid #000;
+    position: absolute;
+    bottom: -13px;
+    left: 19px;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
+}
+License Terms
