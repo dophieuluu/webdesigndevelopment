@@ -1,0 +1,123 @@
+.pricingTable{
+    padding: 100px 0 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable .title{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    background: #f7f2f0;
+    border: 1px solid #ddd;
+    font-size: 22px;
+    font-weight: 800;
+    color: #25283d;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover,
+.pricingTable:hover .title{ border: 1px solid #25283d; }
+.pricingTable .title:after{
+    content: "";
+    border-top: 15px solid #d2d2d2;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: -1px;
+    transition: all 0.5s ease 0s;
+}
+.pricingTable:hover .title:after{ border-top: 15px solid #000; }
+.pricingTable .price-value{
+    font-size: 50px;
+    color: #25283d;
+    margin-bottom: 40px;
+}
+.pricingTable .month{
+    display: block;
+    font-size: 14px;
+    color: #bb69a2;
+    line-height: 0;
+    text-transform: uppercase;
+}
+.pricingTable .pricing-content{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.pricingTable .pricing-content li{
+    font-size: 17px;
+    color: #848484;
+    line-height: 45px;
+    border-bottom: 1px solid #ddd;
+}
+.pricingTable .pricing-content li:nth-child(odd){ background: #f7f2f0; }
+.pricingTable .pricing-content li:first-child{ border-top: 1px solid #ddd; }
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #25283d;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup:hover{ color: #bb69a2; }
+.pricingTable .pricingTable-signup span{
+    display: block;
+    padding: 7px 30px;
+}
+.pricingTable .pricingTable-signup:before,
+.pricingTable .pricingTable-signup:after,
+.pricingTable .pricingTable-signup span:before,
+.pricingTable .pricingTable-signup span:after{
+    content: "";
+    background: #bb69a2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.15s ease-in-out 0s;
+}
+.pricingTable .pricingTable-signup:before,
+.pricingTable .pricingTable-signup:after{
+    width: 2px;
+    height: 0;
+}
+.pricingTable .pricingTable-signup span:before,
+.pricingTable .pricingTable-signup span:after{
+    width: 0;
+    height: 2px;
+    transition-delay: 0.15s;
+}
+.pricingTable .pricingTable-signup:after{
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+.pricingTable .pricingTable-signup span:before{
+    right: 0;
+    left: auto;
+}
+.pricingTable .pricingTable-signup span:after{
+    top: auto;
+    bottom: 0;
+}
+.pricingTable .pricingTable-signup:hover:before,
+.pricingTable .pricingTable-signup:hover:after{
+    height: 100%;
+    transition-delay: 0.15s;
+}
+.pricingTable .pricingTable-signup:hover span:before,
+.pricingTable .pricingTable-signup:hover span:after{
+    width: 100%;
+    transition-delay: 0s;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
