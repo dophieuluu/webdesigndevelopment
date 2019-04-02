@@ -1,0 +1,101 @@
+.pricingTable{
+    border: 1px solid #e3e3e3;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.pricingTable .pricingTable-header{
+    padding: 25px;
+    background: #ef233c;
+    color: #ffffe5;
+}
+.pricingTable .heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+}
+.pricingTable .subtitle{
+    font-size: 12px;
+    margin: 10px 0 0;
+    display: block;
+}
+.pricingTable .price-value{
+    border: 1px solid #d90429;
+}
+.pricingTable .month{
+    display: inline-block;
+    width: 55%;
+    padding: 19px;
+    font-size: 22px;
+    color: #2a3a73;
+    float: left;
+    position: relative;
+}
+.pricingTable .month:after{
+    content: "";
+    border-width: 10px 0 10px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffe5;
+    position: absolute;
+    top: 39%;
+    right: -12px;
+    z-index: 1;
+}
+.pricingTable .amount{
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffe5;
+    background: #d90429;
+}
+.pricingTable .currency{
+    font-size: 22px;
+    position: relative;
+    top: -17px;
+    left: -4px;
+}
+.pricingTable .pricing-content ul{
+    padding: 25px 0;
+    margin: 0;
+    list-style: none;
+    color: #2a3a73;
+}
+.pricingTable .pricing-content ul li{
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+.pricingTable .pricing-content ul li i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.pricingTable .read{
+    display: inline-block;
+    background: #ef233c;
+    font-size: 14px;
+    color: #ffffe5;
+    padding: 10px 40px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease 0s;
+}
+.pricingTable .read:hover{
+    background: #d90429;
+}
+.pricingTable.middle .pricingTable-header,
+.pricingTable.middle .read{
+    background: #f7ac22;
+}
+.pricingTable.middle .price-value{
+    border: 1px solid #ff8a05;
+}
+.pricingTable.middle .amount,
+.pricingTable.middle .read:hover{
+    background: #ff8a05;
+}
+@media screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 25px; }
+}
